@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background-color: black;
+   
+}
+
+.nav {
+    gap: 32px;
+    margin: 10px;
+    padding: 3px 15px;
+    
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.home {
+    width: 19px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 90px;
+    padding: 12px;
+    background-color: #1f1f1f;
+}
+.home:hover{
+    transition: all 0.2s ease-in-out;
+    background-color: #2a2a2a;
+}
+.search {
+    padding: 0px 460px 0px 0px;
+    border-radius: 35px;
+    position: relative;
+    background-color: #1f1f1f ;
+}
+
+.search img {
+    position: absolute;
+    width: 28px;
+    padding: 9px 0px 0px 15px;
+}
+
+.line {
+    padding: 0px 0px 0px 126px;
+}
+
+.line ul li {
+    color:  rgb(179, 179, 179);
+    list-style: none;
+    display: inline;
+    font-family: sans-serif;
+    margin-left: 6px;
+    font-size: 16px;
+}
+.line ul li:hover{
+    color: white;
+}
+
+.seperator {
+    border: 0.7px solid white;
+    margin: 5px 10px
+}
+
+
+.line2 svg {
+    width: 22px;
+}
+
+.lnn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: -41px;
+}
+
+.line2 ul li {
+    color:  rgb(179, 179, 179);
+    list-style: none;
+    display: inline;
+    font-family: sans-serif;
+    margin-left: 10px;
+    
+}
+.line2 ul li:hover{
+    color: white;
+}
+
+.login{
+    padding: 7px 0px;
+    
+}
+.login button{
+   border: 2px solid rgb(0, 0, 0);
+   padding: 7px 12px ;
+   font-family: sans-serif;
+   
+   border-radius: 1116px;
+}
+.login :hover{
+    transition: all 0.3s ease-out;
+    background-color: rgb(207, 201, 201);
+    transform: scale(1.2); 
+    transition: transform 0.2s ease-in-out;
+}
+
+.left{
+    width: 25vw;
+    padding: 10px;
+}
+
+.right{
+    width: 75vw;
+    position: relative;
+    
+}
+.library{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    align-items: center;
+    gap: 200px;
+    min-height: 100vh;
+    position: relative;
+}
+.footer{
+    font-size: 10px;
+    gap: 13px;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0px;
+}
+.footer a{
+    color: grey;
+    text-decoration: none;
+}
+.footer a:hover{
+    transition: all 0.1s ease-in-out ;
+    color: aliceblue;
+}
+.spotifyplaylist{
+    color: white;
+    padding: 11px 23px;
+    font-family: sans-serif;
+}
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+.card{
+    width: 180px;
+    padding: 9px;
+    border-radius: 10px;
+    position: relative;
+}
+.card:hover{
+    transition: all 0.2s ease-in-out;
+    background-color: #151515;
+    
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    
+}
+.card p{
+    font-size: small;
+}
+.play{
+    position: absolute;
+    right: 17px;
+    top: 164px;
+    opacity: 0;
+}
+.play:hover{
+    transition: all 0.7s ease;
+    opacity: 1;
+    top: 134px;
+}
+.playbar{
+    position: fixed;
+    bottom: 30px;
+    background-color: rgba(73, 143, 116, 0.54);
+    width: 68% ;
+    padding: 12px;
+    left: 422px;
+    border-radius: 13px;
+    height: 34px;
+}
+.soundbutton{
+    gap: 12px;
+    filter: invert(1);
+    height: 32px;
+}
+.songlist{
+    overflow: auto;
+    height: 444px;
+    margin-bottom: 44px;
+    margin: 0px -21px;
+}
+.songlist ul{
+    padding: 0px 22px;
+}
+.songlist ul li{
+    list-style-type: decimal;
+    font-weight: 400;
+    display: flex;
+    gap: 19px;
+    cursor: pointer;
+    padding:12px;
+    border: 2px solid rgba(73, 143, 116, 0.54);
+    margin: 13px 0px;
+    border-radius: 5px;
+    justify-content: space-between;
+    
+}
+.songlist ul li:hover{
+    background-color: #2a2a2a;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+    transition: transform 0.6s ease;
+}
+.playnow{
+    margin: 14px 3px;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    font-size: 16px;
+    align-items: center;
+    }
+
+.seekbar{
+    position: absolute;
+    height: 2px;
+    width: 97%;
+    background-color:  white;
+    bottom: 0px;
+    border-radius: 10px;
+    margin: 6px;
+    
+}
+.circle{
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: #fff4f4;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    transition: left 0.5s;
+}
+.soundbutton img{
+    cursor: pointer;
+}
+.abovebar{
+    justify-content: space-between;
+}
+.songinfo{
+    padding: 0px 12px;
+    width: 250px;
+}
+.timevol{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.songtime{
+    width: 125px;
+    align-items: center;
+}
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    cursor: pointer;
+}
+.range input{
+    cursor: pointer;
+}
+
+@media (max-width: 1444px) {
+    .left{
+        width: 333px;
+        position: absolute;
+        left: -130%;
+        transition: all 0.3s;
+        z-index: 1;
+        background-color: black;
+        padding: 0;
+    }
+    
+    .right{
+        width: 100%;
+    }
+    
+    .home{
+        position: absolute;
+        left: -130%;
+    }
+    .line{
+        position: absolute;
+        left: -130%;
+    }
+    .seperator{
+        position: absolute;
+        left: -130%;
+    }
+    .line2 svg{
+        position: absolute;
+        left: -130%;
+    }
+    .lnn ul :nth-child(1){
+        position: absolute;
+        left: -130%;
+    }
+    .lnn ul :nth-child(2){
+       
+        left: 95%;
+    }
+    .search{
+        background-color: #000000;
+    }
+    .search img{
+        left: 90%;
+        top: 6px;
+    }
+    .login {
+        min-width: 65px;
+        
+    }
+    .playbar{
+        width: 95vw;
+        left: 3.5%;
+    }
+    .right{
+        width: 100vw;
+        left: 3.5%;
+        
+    }
+    .nav{
+        width: 100vw;     
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .logo{
+        left: 50%; 
+    }
+    .line2{
+        min-width: 68px;
+    }
+    .hamburger{
+        display: block;
+        
+    }
+    .card{
+        width: 80vw;
+        
+    }
+    .cardcontainer{
+        margin: 0;
+        
+    }
+    .volume{
+        position: absolute;
+        left: -130%;
+    }
+    
+}
+
+
+
