@@ -1,0 +1,14 @@
+{
+    "rewrites": [
+      { "source": "/songs", "destination": "/songs/index.html" }
+    ],
+    "headers": [
+      {
+        "source": "/songs/(.*)",
+        "headers": [
+          { "key": "Access-Control-Allow-Origin", "value": "*" }
+        ]
+      }
+    ]
+  }
+  
